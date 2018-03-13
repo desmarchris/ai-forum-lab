@@ -77,3 +77,19 @@ Now that you have a functioning bot, let's do a quick deploy to see it working i
 8. Say hello! (If it seems like the bot isn't replying and you are in a channel, try mentioning the bot by first typing `@ibmwatson_bot` followed by your message)
 
 ![finished bot](https://github.com/desmarchris/think-lab/blob/master/pictures/finished-bot.png)
+
+## If you want more...
+Did you finish the above and want to learn more? Try some of the following methods to bolster your CoffeeBot.
+
+### Resetting context
+If your user orders a drink and completes the flow, and they try to make another order, the values found from the first flow will still be there so they will not be able to order something else. To fix this, we need to clear the context after a successful order so the values are not stored for the next order.
+1. Under the Slots node `Order Drink`, create a child node.
+2. Set the condition to `true` (Use this condition if you want the node to always fire)
+3. In the response section, click on the three button menu on the right and click on `Open context editor`
+4. Fill in both of the variables (`drink` and `number`) and set the values to `null`
+5. Go back to the `Order Drink` parent node, and go to the section at the bottom of the node `And finally`. Select `Jump to` and click the context clearing child node you just created
+6. Click on `If bot recognizes condition`
+7. Try it out! Without clearing the try it out panel, order a drink. Once finished, try ordering another drink and it should prompt you for the two needed variables again. Here's what the finished child node will look like:
+![clear context](https://github.com/desmarchris/think-lab/blob/master/pictures/clear-context.png)
+
+### Cancel order

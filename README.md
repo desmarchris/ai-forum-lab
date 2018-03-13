@@ -75,3 +75,5 @@ Now that you have a functioning bot, let's do a quick deploy to see it working i
 6. Once in Slack, click `Authorize` to give access to your bot. If done correctly, you will be brought back to the WA tooling and see your Slack workspace has been authorized.
 7. Go into your Slack workspace (I use the web app), and rather invite the bot to a channel or find them on direct message as `@ibmwatson_bot`
 8. Say hello! (If it seems like the bot isn't replying and you are in a channel, try mentioning the bot by first typing `@ibmwatson_bot` followed by your message)
+
+![finished bot](https://github.com/desmarchris/think-lab/blob/master/pictures/finished-bot.png)

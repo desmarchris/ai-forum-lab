@@ -66,3 +66,12 @@ We will be creating a bot to take coffee orders.
 15. Add in the response, "Ok, I have $number $drink coming right up!"
 
 ## Test in Slack
+Now that you have a functioning bot, let's do a quick deploy to see it working in a channel (Slack). You must be an administrator to add a bot. To create a Slack workspace, follow this tutorial: https://get.slack.help/hc/en-us/articles/206845317-Create-a-Slack-workspace
+1. Click on the `Deploy` tab from the left nav bar (it's the second icon)
+2. Under the Slack card, click `Deploy`
+3. Click `Test in Slack` (Note: this uses an IBM hosted app and is meant for testing. To actually deploy this to Slack, you need to use `Deploy to Slack App`)
+4. Click on `Authorize Slack`
+5. If you are sent to slack.com and see an error about adding a workspace, make sure you are an administrator or click in the top right to sign into your own workspace
+6. Once in Slack, click `Authorize` to give access to your bot. If done correctly, you will be brought back to the WA tooling and see your Slack workspace has been authorized.
+7. Go into your Slack workspace (I use the web app), and rather invite the bot to a channel or find them on direct message as `@ibmwatson_bot`
+8. Say hello! (If it seems like the bot isn't replying and you are in a channel, try mentioning the bot by first typing `@ibmwatson_bot` followed by your message)

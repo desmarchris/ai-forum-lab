@@ -68,7 +68,7 @@ Here is how your finished entity `@drink` should look:
 11. Add the intent `#order-drink`to `If bot recognizes`
 12. Under `Check for`, add the entity `@drink`
 13. Under `If not present, ask` add a question like "What would you like to drink?"
-14. Click `Add slot`, and add a condition and prompt for `@sys-number`: "How many cups of $drink would you like?"
+14. Click `Add slot`, and add a condition and prompt for `@sys-number`: "How many cups of $drink would you like?" (Note: the syntax `$variable` is short hand for accessing Context variables. Context variables allow you to pass information between your application and Conversation.)
 15. Add in the response, "Ok, I have $number $drink coming right up!"
 
 Finished dialog tree with `Order Drink` open:

@@ -34,6 +34,9 @@ We will be creating a bot to take coffee orders.
   - #see-menu (User wants to see what's on the menu)
   - #greetings (User greets the bot)
   - #thanks (User thanks the bot)
+  
+Here are the finished intents:
+![finished intents] (https://github.com/desmarchris/think-lab/blob/master/pictures/finished-intents.png)
 
 ## Building Entities
 1. Click on the `Entities` tab at the top of the page
@@ -47,6 +50,9 @@ We will be creating a bot to take coffee orders.
   - tea
 6. Exit the page, and click on `System entities` underneath the `Entities` tab
 7. Turn on `@sys-number`
+
+Here is how your finished entity `@drink` should look:
+![finished entity] (https://github.com/desmarchris/think-lab/blob/master/pictures/finished-entity.png)
 
 ## Building Dialog
 1. Click on the `Dialog` tab at the top of the page
@@ -64,6 +70,9 @@ We will be creating a bot to take coffee orders.
 13. Under `If not present, ask` add a question like "What would you like to drink?"
 14. Click `Add slot`, and add a condition and prompt for `@sys-number`: "How many cups of $drink would you like?"
 15. Add in the response, "Ok, I have $number $drink coming right up!"
+
+Finished dialog tree with `Order Drink` open:
+![finished dialog] (https://github.com/desmarchris/think-lab/blob/master/pictures/finished-dialog.png)
 
 ## Test in Slack
 Now that you have a functioning bot, let's do a quick deploy to see it working in a channel (Slack). You must be an administrator to add a bot. To create a Slack workspace, follow this tutorial: https://get.slack.help/hc/en-us/articles/206845317-Create-a-Slack-workspace

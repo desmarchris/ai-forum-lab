@@ -101,4 +101,14 @@ If your user orders a drink and completes the flow, and they try to make another
 7. Try it out! Without clearing the try it out panel, order a drink. Once finished, try ordering another drink and it should prompt you for the two needed variables again. Here's what the finished child node will look like:
 ![clear context](https://github.com/desmarchris/think-lab/blob/master/pictures/clear-context.png)
 
-### Cancel order
+### Cancel order - Manage Handlers
+
+### Found / Not Found
+
+### Random / Sequential
+
+### MCR
+
+### Digressions - Help
+
+### Using the Improve tab (Analytics)

@@ -96,7 +96,7 @@ If your user orders a drink and completes the flow, and they try to make another
 2. Set the condition to `#order-drink`
 3. In the response section, click on the three button menu on the right and click on `Open context editor`
 4. Fill in both of the variables (`drink` and `number`) and set the values to `null`
-5. Click on the three dot menu on the right side of original Slots node `Order Drink`, and select `Move`. Then, click the new context clearing node and move to `As Child Node` (So, the parent node is the context clearing node, and the slots node is the child
+5. Click on the three dot menu on the right side of original Slots node `Order Drink`, and select `Move`. Then, click the new context clearing node and move to `As Child Node` (So, the parent node is the context clearing node, and the slots node is the child)
 6. Go to the section called `And finally` at the bottom of the context clearing node. Select `Jump to` and click the slots node, then `If bot recognizes condition`
 7. Change the condition of the slots node from `#order-drink` to `true` (Use this condition if you want the node to always fire)
 8. Try it out! Without clearing the try it out panel, order a drink. Once finished, try ordering another drink and it should prompt you for the two needed variables again. Here's what the finished context clearing node will look like:

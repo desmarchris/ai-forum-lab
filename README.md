@@ -92,23 +92,26 @@ Did you finish the above and want to learn more? Try some of the following metho
 
 ### Resetting context
 If your user orders a drink and completes the flow, and they try to make another order, the values found from the first flow will still be there so they will not be able to order something else. To fix this, we need to clear the context after a successful order so the values are not stored for the next order.
-1. Under the Slots node `Order Drink`, create a child node.
-2. Set the condition to `true` (Use this condition if you want the node to always fire)
+1. Create a node above the Slots node `Order Drink` called `Order Drink - Clear Context`
+2. Set the condition to `#order-drink`
 3. In the response section, click on the three button menu on the right and click on `Open context editor`
 4. Fill in both of the variables (`drink` and `number`) and set the values to `null`
-5. Go back to the `Order Drink` parent node, and go to the section at the bottom of the node `And finally`. Select `Jump to` and click the context clearing child node you just created
-6. Click on `If bot recognizes condition`
-7. Try it out! Without clearing the try it out panel, order a drink. Once finished, try ordering another drink and it should prompt you for the two needed variables again. Here's what the finished child node will look like:
+5. Click on the three dot menu on the right side of original Slots node `Order Drink`, and select `Move`. Then, click the new context clearing node and move to `As Child Node` (So, the parent node is the context clearing node, and the slots node is the child
+6. Go to the section called `And finally` at the bottom of the context clearing node. Select `Jump to` and click the slots node, then `If bot recognizes condition`
+7. Change the condition of the slots node from `#order-drink` to `true` (Use this condition if you want the node to always fire)
+8. Try it out! Without clearing the try it out panel, order a drink. Once finished, try ordering another drink and it should prompt you for the two needed variables again. Here's what the finished context clearing node will look like:
 ![clear context](https://github.com/desmarchris/think-lab/blob/master/pictures/clear-context.png)
 
+
 ### Cancel order - Manage Handlers
+What if your user gets stuck in the middle of ordering a drink and wants to cancel their order? 
+
+### Help - Digressions
 
 ### Found / Not Found
 
 ### Random / Sequential
 
 ### MCR
-
-### Digressions - Help
 
 ### Using the Improve tab (Analytics)

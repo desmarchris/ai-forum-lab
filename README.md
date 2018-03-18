@@ -103,15 +103,22 @@ If your user orders a drink and completes the flow, and they try to make another
 ![clear context](https://github.com/desmarchris/think-lab/blob/master/pictures/clear-context.png)
 
 
-### Cancel order - Manage Handlers
+### Cancel order - Manage Handlers (not currently working)
 What if your user gets stuck in the middle of ordering a drink and wants to cancel their order? 
+1. Go back into your `Order Drink` Slots node
+2. Click on `Manage Handlers` right above the node responses
+3. Add a `#cancel` intent to the condition (and add a few examples in the Intents tab) and a response saying something like: "Ok, I will cancel your order"
+4. Click on the settings gear of the handler
+5. Click on the three dot menu and open the context editor
+6. Add a variable `cancelled` with the value `true`
+7. Change the `And finally` section to `Skip to response`
+8. Go back to the main node page and click on `Customize` in the upper right
+9. Turn on `Multiple responses`
+10. Scroll back down to the responses and add a response. Move your current response to the second response and make the condition `$cancelled:null`
+11. Add a condition to the first response as `$cancelled:true` and add a response saying something like: "Your order has been cancelled"
+12. Go back to your clear context node and add the variable `$cancelled` and set the value to `null` like the other context variables listed there
+13. Try it out!
 
 ### Help - Digressions
-
-### Found / Not Found
-
-### Random / Sequential
-
-### MCR
-
-### Using the Improve tab (Analytics)
+Sometimes, you will want an intent to be handled no matter where the user is in their flow. Think of Digressions as a global 'manage handlers': they allow you to respond to an intent even if a user is in the middle of a process flow, and then it allows them to return to their prior flow. If your user wants some help talking to the bot anywhere in your bot, this is a good intent to have digressions enabled.
+1. 

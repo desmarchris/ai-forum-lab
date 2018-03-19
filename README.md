@@ -100,7 +100,7 @@ If your user orders a drink and completes the flow, and they try to make another
 6. Go to the section called `And finally` at the bottom of the context clearing node. Select `Jump to` and click the slots node, then `If bot recognizes condition`
 7. Change the condition of the slots node from `#order-drink` to `true` (Use this condition if you want the node to always fire)
 8. Try it out! Without clearing the try it out panel, order a drink. Once finished, try ordering another drink and it should prompt you for the two needed variables again. Here's what the finished context clearing node will look like:
-![clear context](https://github.com/desmarchris/think-lab/blob/`master/pictures/clear-context.png)
+![clear context](https://github.com/desmarchris/think-lab/blob/master/pictures/clear-context.png)
 
 ### Help - Digressions
 Sometimes, you will want an intent to be handled no matter where the user is in their flow. Think of Digressions as a global 'manage handlers': they allow you to respond to an intent even if a user is in the middle of a process flow, and then it allows them to return to their prior flow. If your user wants some help talking to the bot anywhere in your bot, this is a good intent to have digressions enabled.

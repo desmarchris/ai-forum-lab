@@ -100,25 +100,16 @@ If your user orders a drink and completes the flow, and they try to make another
 6. Go to the section called `And finally` at the bottom of the context clearing node. Select `Jump to` and click the slots node, then `If bot recognizes condition`
 7. Change the condition of the slots node from `#order-drink` to `true` (Use this condition if you want the node to always fire)
 8. Try it out! Without clearing the try it out panel, order a drink. Once finished, try ordering another drink and it should prompt you for the two needed variables again. Here's what the finished context clearing node will look like:
-![clear context](https://github.com/desmarchris/think-lab/blob/master/pictures/clear-context.png)
-
-
-### Cancel order - Manage Handlers (not currently working)
-What if your user gets stuck in the middle of ordering a drink and wants to cancel their order? 
-1. Go back into your `Order Drink` Slots node
-2. Click on `Manage Handlers` right above the node responses
-3. Add a `#cancel` intent to the condition (and add a few examples in the Intents tab) and a response saying something like: "Ok, I will cancel your order"
-4. Click on the settings gear of the handler
-5. Click on the three dot menu and open the context editor
-6. Add a variable `cancelled` with the value `true`
-7. Change the `And finally` section to `Skip to response`
-8. Go back to the main node page and click on `Customize` in the upper right
-9. Turn on `Multiple responses`
-10. Scroll back down to the responses and add a response. Move your current response to the second response and make the condition `$cancelled:null`
-11. Add a condition to the first response as `$cancelled:true` and add a response saying something like: "Your order has been cancelled"
-12. Go back to your clear context node and add the variable `$cancelled` and set the value to `null` like the other context variables listed there
-13. Try it out!
+![clear context](https://github.com/desmarchris/think-lab/blob/`master/pictures/clear-context.png)
 
 ### Help - Digressions
 Sometimes, you will want an intent to be handled no matter where the user is in their flow. Think of Digressions as a global 'manage handlers': they allow you to respond to an intent even if a user is in the middle of a process flow, and then it allows them to return to their prior flow. If your user wants some help talking to the bot anywhere in your bot, this is a good intent to have digressions enabled.
-1. 
+1. Create a `#help` intent with examples like: "I need help"
+2. Create a node below your `Order Drink` node
+3. Add the condition of `#help` with a response like: "I can help you order a drink from my coffee shop. Just say order drink to get started!"
+4. Go into the `Customize` portion of the node by clicking in the upper right
+5. Click on the `Digressions` tab
+6. Enable `Return after digression` (Digressions should be on by default, this setting allows you to handle the intent and then return back to the flow)
+7. Now to test this out, we need to get in the middle of our order drink flow. But first, since it is a slot, we need to go into the `Digressions` tab in the `Order Drink` slots node
+8. Turn on `Allow digressions away while slot filling` and click the button that only allows nodes with returns enabled. This will help you to control which nodes you want to allow to digress to
+9. Try it out by saying "order drink", then when asked for what kind of drink you want, say "help". You should see a response from your help node with another follow up message for the next slot filling question

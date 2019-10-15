@@ -83,10 +83,20 @@ Finished dialog tree with `Order Drink` open:
 ![finished dialog](https://github.com/desmarchris/ai-summit-lab/blob/master/pictures/finished-dialog.png)
 
 ## Deploying Web Chat
+Now that we have a functioning assistant, let's deploy it to a site to see how it will look for our coffee customers. If you have an existing page you'd like to embed, you can follow the steps below until we get to opening the sample HTML page.
+1. Backout of the skill by selecting the `Assistant` breadcrumb in the top left. This should take you inside your `CoffeeBot - Dev` Assistant.
+2. On the right side of the screen, click `Add integration` under the `Integrations` section.
+3. Select Web Chat, and click `Create`.
+4. We'll revisit the customization in a bit. For now, scroll down to the embed script titled `Add the chat UI to your web page` and leave this page open
+5. At the top of this readme, open the file `web-chat-example.txt` in a new tab.
+6. Copy the code into a text editor
+7. Back inside Watson Assistant, copy the embed script on the Web Chat page and paste over the section that says `INSERT EMBED SCRIPT HERE`
+8. Save the file as a `.html` file rather than `.txt`
+9. Find the file in your downloads / desktop, and open it in your browser
+10. Start chatting with your bot!
 
+## Customizing Web Chat
 
-## Alternative: Previewing Web Chat
-If you have problems with the HTML, or upgrading your account to Plus Trial, then you can follow
 
 ## If you want more...
 Did you finish the above and want to learn more? Try some of the following methods to bolster your CoffeeBot.

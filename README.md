@@ -82,14 +82,17 @@ Here is how your finished entity `@drink` should look:
 Finished dialog tree with `Order Drink` open:
 ![finished dialog](https://github.com/desmarchris/ai-summit-lab/blob/master/pictures/finished-dialog.png)
 
+## Upgrading to Plus Trial
+To make Web Chat appear, we'll need a Plus Trial account. You don't need a credit card for this and won't be charged. Find the `Try plus plan` button anywhere in the tooling, and click to find the button to `Start free trial`. There is one inside your assistant where the `Search` tile appears near the bottom of the page.
+
 ## Deploying Web Chat
 Now that we have a functioning assistant, let's deploy it to a site to see how it will look for our coffee customers. If you have an existing page you'd like to embed, you can follow the steps below until we get to opening the sample HTML page.
 1. Backout of the skill by selecting the `Assistant` breadcrumb in the top left. This should take you inside your `CoffeeBot - Dev` Assistant.
 2. On the right side of the screen, click `Add integration` under the `Integrations` section.
 3. Select Web Chat, and click `Create`.
 4. We'll revisit the customization in a bit. For now, scroll down to the embed script titled `Add the chat UI to your web page` and leave this page open
-5. At the top of this readme, open the file `web-chat-example.txt` in a new tab.
-6. Copy the code into a text editor
+5. On the homepage of this repo, open the file `web-chat-example.txt` in a new tab.
+6. Copy the code and paste into a text editor (Note: you may need to open the `Raw` format of the file to copy the text)
 7. Back inside Watson Assistant, copy the embed script on the Web Chat page and paste over the section that says `INSERT EMBED SCRIPT HERE`
 8. Save the file as a `.html` file rather than `.txt`
 9. Find the file in your downloads / desktop, and open it in your browser
@@ -97,6 +100,8 @@ Now that we have a functioning assistant, let's deploy it to a site to see how i
 
 ## Customizing Web Chat
 
+## Alternative to adding the code
+If you have any trouble using the `.html` option, you can open a Preview Link and add `/example` to the end of the URL to 
 
 ## If you want more...
 Did you finish the above and want to learn more? Try some of the following methods to bolster your CoffeeBot.

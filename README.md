@@ -2,7 +2,7 @@
 We will be creating a bot to take coffee orders.
 
 ## Creating an IBM Cloud Account
-1. Go to this link and create an account: https://cloud.ibm.com/registration
+1. Go to this link and create an account: https://cloud.ibm.com/registration?cm_mmc=web-chat
 2. Or, go to https://cloud.ibm.com/ and login if you have an account already and login
 
 ## Provisioning a Watson Assistant instance

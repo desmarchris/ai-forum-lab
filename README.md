@@ -100,10 +100,8 @@ Now that we have a functioning assistant, let's deploy it to a site to see how i
 9. Find the file in your downloads / desktop, and open it in your browser
 10. Start chatting with your bot!
 
-## Customizing Web Chat
-
-## Alternative to adding the code
-If you have any trouble using the `.html` option, you can open a Preview Link and add `/example` to the end of the URL to 
+### Customizing Web Chat
+Back in the Web Chat configuration page within Watson Assistant, you can customize how Web Chat appears on your page. Try changing the accent color, adding your own title, or messing with the font. Make sure you select `Save changes` at the bottom, and refresh your mock coffee website.
 
 ## If you want more...
 Did you finish the above and want to learn more? Try some of the following methods to bolster your CoffeeBot.
